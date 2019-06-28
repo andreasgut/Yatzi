@@ -1,0 +1,3 @@
+Probleme
+
+Button Highscore kann nicht auf Tabelle "highscore" zugreifen
