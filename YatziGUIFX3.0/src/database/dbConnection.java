@@ -9,7 +9,7 @@ public class dbConnection {
     private static final String USERNAME = "dbuser";
     private static final String PASSWORD = "dbpassword";
     private static final String CONN = "jdbc:mysql://localhost/login";
-    private static final String SQCONN = "jdbc:sqlite:/Users/andreasgut/Documents/Uni Bern/Informatik/YatziGUIFX3.0/sql/database.db";
+    private static final String SQCONN = "jdbc:sqlite:/Users/andreasgut/Documents/Uni Bern/Informatik/YatziGit/Yatzi/YatziGUIFX3.0/sql/database.db";
 
     public static Connection getConnection()  throws SQLException {
 

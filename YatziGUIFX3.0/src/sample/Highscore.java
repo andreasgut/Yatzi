@@ -5,13 +5,23 @@ public class Highscore {
     private String nachname;
     private String score;
     private String datum;
+    private String rang;
 
-    public Highscore(String vorname, String nachname, String score, String datum) {
+    public Highscore(String rang, String vorname, String nachname, String score, String datum) {
         this.vorname = vorname;
         this.nachname = nachname;
         this.score = score;
         this.datum = datum;
+        this.rang = rang;
 
+    }
+
+    public String getRang() {
+        return rang;
+    }
+
+    public void setRang(String rang) {
+        this.rang = rang;
     }
 
     public String getDatum() {

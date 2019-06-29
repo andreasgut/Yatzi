@@ -66,7 +66,7 @@ public class ConnectionHighscore {
         try {
             while (resultSet.next()) {
 
-                Highscore highscore = new Highscore(resultSet.getString("Vorname"),
+                Highscore highscore = new Highscore(resultSet.getString("Rang"), resultSet.getString("Vorname"),
                         resultSet.getString("Nachname"),
                         resultSet.getString("Score"), resultSet.getString("Datum"));
 

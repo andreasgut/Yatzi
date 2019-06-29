@@ -230,6 +230,8 @@ public class Main extends Application {
         vBoxHighscore = new VBox();
         highscoreTableV = new TableView<>();
 
+        TableColumn<Highscore, String> rang = new TableColumn<>("Rang");
+        rang.setCellValueFactory(new PropertyValueFactory<>("rang"));
         TableColumn<Highscore, String> vorname = new TableColumn<>("Vorname");
         vorname.setCellValueFactory(new PropertyValueFactory<>("vorname"));
         TableColumn<Highscore, String> nachname = new TableColumn<>("Nachname");
@@ -241,7 +243,7 @@ public class Main extends Application {
 
 
 
-        highscoreTableV.getColumns().addAll(vorname, nachname, score, datum);
+        highscoreTableV.getColumns().addAll(rang, vorname, nachname, score, datum);
         vBoxHighscore.getChildren().addAll(highscoreTitel, highscoreTableV);
 
 
