@@ -1,10 +1,8 @@
 package sample;
 
-import database.dbConnection;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -17,21 +15,18 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class Main extends Application {
-    Button startButton, neuWürfeln, anrechnen, fortunaMajor, highscore;
-    TextField playerName1, playerName2;
-    Scene scene1, highscoreScene;
+    Button startButton, neuWürfeln, anrechnen, fortunaMajor, highscore, eintragen, highscoreBestätigen;
+    TextField playerName1, playerName2, tVorname, tNachname;
+    Scene scene1, highscoreScene, highscoreEnterScene;
     HBox hBoxName;
-    HBox hBox1, hBox2, hBox3;
-    VBox vBox2, vBoxHighscore;
+    HBox hBox1, hBox2, hBox3, hBox4;
+    VBox vBox2, vBoxHighscore, vBoxHighscoreEnter;
     Label wurf, lPlayer1, lPlayer2, lAufforderung, lW1, lW1w, lW2, lW2w, lW3, lW3w, lW4, lW4w, lW5, lW5w, congrat, end,
-    highscoreTitel, highscoreAsLabel;
+    highscoreTitel, highscoreAsLabel, lVorname, lNachname;
     CheckBox cW1, cW2, cW3, cW4, cW5;
     BorderPane borderpane1;
     Player player1, player2, winner;
@@ -85,6 +80,15 @@ public class Main extends Application {
         hBox3.setAlignment(Pos.CENTER);
         hBox3.getChildren().addAll(end);
         hBox3.setMinHeight(hBox1.getHeight());
+
+        //Schlussbildschirm Bottom
+        eintragen = new Button("In Bestenliste eintragen");
+        hBox4 = new HBox();
+        hBox4.getChildren().addAll(eintragen);
+        hBox4.setAlignment(Pos.CENTER);
+
+
+
 
 
 
@@ -247,6 +251,18 @@ public class Main extends Application {
         vBoxHighscore.getChildren().addAll(highscoreTitel, highscoreTableV);
 
 
+        //HighscoreEnter
+
+        lVorname = new Label("Vorname:");
+        tVorname = new TextField();
+        lNachname = new Label("Nachname:");
+        tNachname = new TextField();
+        highscoreBestätigen = new Button("Eintragen");
+
+        vBoxHighscoreEnter = new VBox();
+        vBoxHighscoreEnter.getChildren().addAll(lVorname, tVorname, lNachname, tNachname, highscoreBestätigen);
+
+
 
 
 
@@ -269,6 +285,9 @@ public class Main extends Application {
 
         highscoreScene = new Scene(vBoxHighscore, 500, 400);
         highscoreScene.getStylesheets().add("Edel.css");
+
+        highscoreEnterScene = new Scene(vBoxHighscoreEnter);
+        highscoreEnterScene.getStylesheets().add("Edel.css");
 
 
 
@@ -335,7 +354,7 @@ public class Main extends Application {
             spielstand.refresh();
 
 
-            if (game.getRundeNummer()<30){
+            if (game.getRundeNummer()<1){
 
                 game.play();
                 updateModusComboBox();
@@ -392,16 +411,26 @@ public class Main extends Application {
 
         });
 
+        eintragen.setOnAction(event -> {
+            Stage sEintragen = new Stage();
+            sEintragen.setScene(highscoreEnterScene);
+            sEintragen.show();
+        });
+
+        highscoreBestätigen.setOnAction(event -> {
+            connectionHighscore.enter();
+        });
 
         primaryStage.setTitle("Yatzi – Das Spiel für harte Kerle und Kerlinnen");
         primaryStage.setScene(scene1);
         primaryStage.show();
 
-    }
 
-    private void nothing() {
 
     }
+
+
+
 
     private void getWinner() {
         if (player1.getTotal() > player2.getTotal()) {winner = player1;}
@@ -411,6 +440,7 @@ public class Main extends Application {
         congrat = new Label(winner.getName() + " hat das Spiel mit " + winner.getTotal() + " Punkten gewonnen!");
         vBox2.getChildren().add(congrat);
         borderpane1.setTop(hBox3);
+        borderpane1.setBottom(hBox4);
 
     }
 

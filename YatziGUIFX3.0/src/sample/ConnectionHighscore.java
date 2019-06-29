@@ -81,6 +81,10 @@ public class ConnectionHighscore {
     return resultTable;
     }
 
+    public void enter(){
+
+    }
+
 
     public boolean isLogin(String user, String pass, String opt) throws Exception{
         PreparedStatement pr = null;
