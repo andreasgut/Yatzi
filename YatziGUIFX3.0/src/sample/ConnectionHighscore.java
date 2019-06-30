@@ -49,7 +49,7 @@ public class ConnectionHighscore {
 
 
         try {
-        preparedStatement = this.connection.prepareStatement("SELECT vorname, nachname, datum, score, RANK() OVER(ORDER BY score DESC) AS Rang FROM highscore LIMIT 3");
+        preparedStatement = this.connection.prepareStatement("SELECT vorname, nachname, datum, score, RANK() OVER(ORDER BY score DESC) AS Rang FROM highscore LIMIT 10");
         //problem bei abfrage: score ist ein string, darum kann er nix vergleichen, sonst alles ok
         resultSet = preparedStatement.executeQuery();
         System.out.println(resultSet);}
@@ -81,9 +81,27 @@ public class ConnectionHighscore {
     return resultTable;
     }
 
-    public void enter(){
+    public void enter(String vorname, String nachname, int punkte){
+
+        try{
+        AktuellesDatum aktuellesDatum = new AktuellesDatum();
+        preparedStatement = this.connection.prepareStatement("INSERT INTO highscore(vorname, nachname, score, datum) VALUES( ?, ?, ?, ?)");
+        preparedStatement.setString(1, vorname);
+        preparedStatement.setString(2, nachname);
+        preparedStatement.setInt(3, punkte);
+        preparedStatement.setString(4, aktuellesDatum.formatDate().toString());
+        preparedStatement.executeUpdate();
+        System.out.println("eingetragen");
+
+
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
 
     }
+
+
 
 
     public boolean isLogin(String user, String pass, String opt) throws Exception{

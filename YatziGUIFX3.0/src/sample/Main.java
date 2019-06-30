@@ -19,14 +19,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class Main extends Application {
-    Button startButton, neuWürfeln, anrechnen, fortunaMajor, highscore, eintragen, highscoreBestätigen;
+    Button startButton, neuWürfeln, anrechnen, fortunaMajor, highscore, highscore2, eintragen, highscoreBestätigen;
     TextField playerName1, playerName2, tVorname, tNachname;
-    Scene scene1, highscoreScene, highscoreEnterScene;
+    Scene scene1, highscoreScene, highscoreEnterScene, rangverkündigung;
     HBox hBoxName;
     HBox hBox1, hBox2, hBox3, hBox4;
     VBox vBox2, vBoxHighscore, vBoxHighscoreEnter;
     Label wurf, lPlayer1, lPlayer2, lAufforderung, lW1, lW1w, lW2, lW2w, lW3, lW3w, lW4, lW4w, lW5, lW5w, congrat, end,
-    highscoreTitel, highscoreAsLabel, lVorname, lNachname;
+    highscoreTitel, highscoreAsLabel, lVorname, lNachname, rangLabel;
     CheckBox cW1, cW2, cW3, cW4, cW5;
     BorderPane borderpane1;
     Player player1, player2, winner;
@@ -39,6 +39,7 @@ public class Main extends Application {
     PreparedStatement preparedStatement;
     ResultSet resultSet;
     ConnectionHighscore connectionHighscore;
+    Stage sEintragen, highscoreStage, rang;
 
 
     @Override
@@ -80,17 +81,6 @@ public class Main extends Application {
         hBox3.setAlignment(Pos.CENTER);
         hBox3.getChildren().addAll(end);
         hBox3.setMinHeight(hBox1.getHeight());
-
-        //Schlussbildschirm Bottom
-        eintragen = new Button("In Bestenliste eintragen");
-        hBox4 = new HBox();
-        hBox4.getChildren().addAll(eintragen);
-        hBox4.setAlignment(Pos.CENTER);
-
-
-
-
-
 
 
         //Hauptbildschirm Bottom
@@ -141,6 +131,16 @@ public class Main extends Application {
         hBox2.setAlignment(Pos.CENTER);
         hBox2.getChildren().addAll(fortunaMajor, wurf, cW1, lW1w, cW2, lW2w, cW3, lW3w, cW4, lW4w, cW5, lW5w, neuWürfeln, modus, anrechnen, highscore);
         hBox2.setSpacing(5);
+
+        //Schlussbildschirm Bottom
+        highscore2 = new Button("Highscore");
+        eintragen = new Button("In Bestenliste eintragen");
+        hBox4 = new HBox(10);
+        hBox4.getChildren().addAll(eintragen, highscore2);
+        hBox4.setAlignment(Pos.CENTER);
+
+
+
 
         //Hauptbildschirm Center
 
@@ -255,11 +255,13 @@ public class Main extends Application {
 
         lVorname = new Label("Vorname:");
         tVorname = new TextField();
+        tVorname.setMaxWidth(300);
         lNachname = new Label("Nachname:");
         tNachname = new TextField();
+        tNachname.setMaxWidth(300);
         highscoreBestätigen = new Button("Eintragen");
 
-        vBoxHighscoreEnter = new VBox();
+        vBoxHighscoreEnter = new VBox(10);
         vBoxHighscoreEnter.getChildren().addAll(lVorname, tVorname, lNachname, tNachname, highscoreBestätigen);
 
 
@@ -283,10 +285,10 @@ public class Main extends Application {
         scene1 = new Scene(borderpane1, 1222, 500);
         scene1.getStylesheets().add("Edel.css");
 
-        highscoreScene = new Scene(vBoxHighscore, 500, 400);
+        highscoreScene = new Scene(vBoxHighscore, 500, 322);
         highscoreScene.getStylesheets().add("Edel.css");
 
-        highscoreEnterScene = new Scene(vBoxHighscoreEnter);
+        highscoreEnterScene = new Scene(vBoxHighscoreEnter, 400, 200);
         highscoreEnterScene.getStylesheets().add("Edel.css");
 
 
@@ -373,7 +375,16 @@ public class Main extends Application {
         highscore.setOnAction(event -> {
 
             highscoreTableV.setItems(connectionHighscore.getHighscore());
-            Stage highscoreStage = new Stage();
+            highscoreStage = new Stage();
+            highscoreStage.setScene(highscoreScene);
+            highscoreStage.show();
+
+        });
+
+        highscore2.setOnAction(event -> {
+
+            highscoreTableV.setItems(connectionHighscore.getHighscore());
+            highscoreStage = new Stage();
             highscoreStage.setScene(highscoreScene);
             highscoreStage.show();
 
@@ -412,13 +423,18 @@ public class Main extends Application {
         });
 
         eintragen.setOnAction(event -> {
-            Stage sEintragen = new Stage();
+            sEintragen = new Stage();
             sEintragen.setScene(highscoreEnterScene);
             sEintragen.show();
         });
 
         highscoreBestätigen.setOnAction(event -> {
-            connectionHighscore.enter();
+            //rang = new Stage();
+
+            connectionHighscore.enter(tVorname.getText(), tNachname.getText(), winner.getTotal());
+            sEintragen.close();
+
+
         });
 
         primaryStage.setTitle("Yatzi – Das Spiel für harte Kerle und Kerlinnen");
@@ -441,6 +457,7 @@ public class Main extends Application {
         vBox2.getChildren().add(congrat);
         borderpane1.setTop(hBox3);
         borderpane1.setBottom(hBox4);
+        borderpane1.setMargin(hBox4, inset10);
 
     }
 
