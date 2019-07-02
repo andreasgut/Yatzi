@@ -1083,6 +1083,10 @@ public class Game {
         this.w5 = w5;
     }
 
+    public void setDieTable(int[] dieTable) {
+        this.dieTable = dieTable;
+    }
+
     public int getWurfNummer() {
         return wurfNummer;
     }
