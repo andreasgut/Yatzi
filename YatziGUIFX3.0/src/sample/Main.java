@@ -225,6 +225,7 @@ public class Main extends Application {
                 einPaar, zweiPaar, dreiGleiche, vierGleiche, kleineStrasse, grosseStrasse, fullHouse, chance,
                 yatzi, total);
 
+
         vBox2 = new VBox();
         vBox2.getChildren().addAll(spielstand);
 
@@ -356,7 +357,7 @@ public class Main extends Application {
             spielstand.refresh();
 
 
-            if (game.getRundeNummer()<1){
+            if (game.getRundeNummer()<30){
 
                 game.play();
                 updateModusComboBox();

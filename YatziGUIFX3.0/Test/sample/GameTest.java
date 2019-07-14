@@ -63,6 +63,19 @@ public class GameTest {
 
     @Test
     public void zweiPaare() {
+        Player player1 = new Player("player1");
+        Player player2 = new Player("player2");
+        Game game = new Game(player1, player2);
+
+
+        game.die1.setDie(5);
+        game.die2.setDie(5);
+        game.die3.setDie(2);
+        game.die4.setDie(3);
+        game.die5.setDie(3);
+        game.zweiPaare();
+
+        assertEquals(16, player1.getZweiPaar());
     }
 
     @Test

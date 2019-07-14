@@ -89,7 +89,7 @@ public class Game {
 
     //modus
 
-    public void einer() {
+    public int einer() {
         int count = 0;
         int result;
         if (die1.getDie() == 1) count++;
@@ -103,9 +103,11 @@ public class Game {
         currentPlayer.setEiner(result);
         currentPlayer.setEinerC(true);
 
+        return result;
+
     }
 
-    public void zweier() {
+    public int zweier() {
         int count = 0;
         int result;
         if (die1.getDie() == 2) count++;
@@ -119,9 +121,11 @@ public class Game {
         currentPlayer.setZweier(result);
         currentPlayer.setZweierC(true);
 
+        return result;
+
     }
 
-    public void dreier() {
+    public int dreier() {
         int count = 0;
         int result;
         if (die1.getDie() == 3) count++;
@@ -135,11 +139,12 @@ public class Game {
         currentPlayer.setDreier(result);
         currentPlayer.setDreierC(true);
 
+        return result;
     }
 
 
 
-    public void vierer() {
+    public int vierer() {
         int count = 0;
         int result;
         if (die1.getDie() == 4) count++;
@@ -152,9 +157,11 @@ public class Game {
 
         currentPlayer.setVierer(result);
         currentPlayer.setViererC(true);
+
+        return result;
     }
 
-    public void fünfer() {
+    public int fünfer() {
         int count = 0;
         int result;
         if (die1.getDie() == 5) count++;
@@ -167,9 +174,11 @@ public class Game {
 
         currentPlayer.setFünfer(result);
         currentPlayer.setFünferC(true);
+
+        return result;
     }
 
-    public void sechser() {
+    public int sechser() {
         int count = 0;
         int result;
         if (die1.getDie() == 6) count++;
@@ -182,6 +191,8 @@ public class Game {
 
         currentPlayer.setSechser(result);
         currentPlayer.setSechserC(true);
+
+        return result;
 
     }
 
@@ -222,30 +233,65 @@ public class Game {
 
 
     public void zweiPaare() {
-        int paar1;
-        int paar2;
-        int paar3;
-        int result;
+
+        boolean einer = false;
+        boolean zweier = false;
+        boolean dreier = false;
+        boolean vierer = false;
+        boolean fünfer = false;
+        boolean sechser = false;
+        int counter = 0;
+        int result = 0;
 
 
-        if (die1.getDie() == die2.getDie() || die1.getDie() == die3.getDie() || die1.getDie() == die4.getDie()
-                || die1.getDie() == die5.getDie()) paar1 = die1.getDie();
-        else paar1 = 0;
 
-        if (die2.getDie() == die3.getDie() || die2.getDie() == die4.getDie() || die2.getDie() == die5.getDie())
-            paar2 = die2.getDie();
-        else paar2 = 0;
+        if (this.einer() >= 2){einer = true;}
+        if (this.zweier() >= 4){zweier = true;}
+        if (this.dreier() >= 6){dreier = true;}
+        if (this.vierer() >= 8){vierer = true;}
+        if (this.fünfer() >= 10){fünfer = true;}
+        if (this.sechser() >= 12){sechser = true;}
 
-        if (die3.getDie() == die4.getDie() || die3.getDie() == die5.getDie()) paar3 = die3.getDie();
-        else paar3 = 0;
+        if (einer){
+            counter++;
+            result += 2;
+        }
+
+        if (zweier){
+            counter++;
+            result += 4;
+        }
+
+        if (dreier){
+            counter++;
+            result += 6;
+        }
+
+        if (vierer){
+            counter++;
+            result += 8;
+        }
+
+        if (fünfer){
+            counter++;
+            result += 10;
+        }
+
+        if (sechser){
+            counter++;
+            result += 12;
+        }
 
 
-        if ((paar1 > 0 && paar2 > 0 && paar1 != paar2) || (paar1 > 0 && paar3 > 0 && paar1 != paar3)
-                || (paar2 > 0 && paar3 > 0 && paar2 != paar3)) {result = paar1*2 + paar2*2 + paar3*2;
-            currentPlayer.setZweiPaar(result); }
-        else
-        currentPlayer.setZweiPaar(0);
+        if (counter>=2){
+            currentPlayer.setZweiPaar(result);
+        }
+
+        else {currentPlayer.setZweiPaar(0);}
+
         currentPlayer.setZweiPaarC(true);
+
+
 
 
     }

@@ -10,7 +10,7 @@ public class Player {
 
     public void totalBerechnen(){
 
-        total = einer+zweier+dreier+vierer+fünfer+sechser+einPaar+zweiPaar+dreiGleiche+vierGleiche+kleineStrasse+
+        total = einer+zweier+dreier+vierer+fünfer+sechser+bonus+einPaar+zweiPaar+dreiGleiche+vierGleiche+kleineStrasse+
                 grosseStrasse+fullHouse+chance+yatzi;
 
 

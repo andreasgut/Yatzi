@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Bestenliste aktualisiert (Einträge möglich)&#10;Layout angepasst&#10;Datumklasse hinzugefügt">
-      <change afterPath="$PROJECT_DIR$/Test/sample/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YatziGUIFX3.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/YatziGUIFX3.0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/sample/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/sample/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/YatziGUIFX3.0/sample/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YatziGUIFX3.0/sample/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/YatziGUIFX3.0/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YatziGUIFX3.0/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/YatziGUIFX3.0/sample/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YatziGUIFX3.0/sample/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/YatziGUIFX3.0/sample/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/YatziGUIFX3.0/sample/GameTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Player.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,24 +112,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="91" column="21" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="21" />
+            <state relative-caret-position="167">
+              <caret line="284" lean-forward="true" selection-start-line="284" selection-end-line="284" />
               <folding>
-                <element signature="e#21849#21850#0" expanded="true" />
-                <element signature="e#21889#21890#0" expanded="true" />
+                <element signature="e#21881#21882#0" expanded="true" />
+                <element signature="e#21946#21947#0" expanded="true" />
+                <element signature="e#22011#22012#0" expanded="true" />
+                <element signature="e#22076#22077#0" expanded="true" />
+                <element signature="e#22141#22142#0" expanded="true" />
+                <element signature="e#22206#22207#0" expanded="true" />
+                <element signature="e#22293#22294#0" expanded="true" />
+                <element signature="e#22360#22361#0" expanded="true" />
+                <element signature="e#22426#22427#0" expanded="true" />
+                <element signature="e#22490#22491#0" expanded="true" />
+                <element signature="e#22554#22555#0" expanded="true" />
+                <element signature="e#22622#22623#0" expanded="true" />
+                <element signature="e#22698#22699#0" expanded="true" />
+                <element signature="e#22767#22768#0" expanded="true" />
+                <element signature="e#22838#22839#0" expanded="true" />
+                <element signature="e#22939#22940#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/sample/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
+            <state relative-caret-position="487">
+              <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,8 +163,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3585">
-              <caret line="239" column="50" selection-start-line="239" selection-start-column="50" selection-end-line="239" selection-end-column="50" />
+            <state relative-caret-position="6270">
+              <caret line="434" column="91" selection-start-line="434" selection-start-column="86" selection-end-line="434" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -193,8 +214,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -223,10 +244,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>stage</find>
-      <find>scene1</find>
-      <find>connectionH</find>
-      <find>connection</find>
       <find>get</find>
       <find>tablevie</find>
       <find>result</find>
@@ -251,6 +268,12 @@
       <find>getD</find>
       <find>public in</find>
       <find>einer</find>
+      <find>game</find>
+      <find>runde</find>
+      <find>play</find>
+      <find>tab</find>
+      <find>spielsta</find>
+      <find>getTo</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -277,8 +300,9 @@
         <option value="$PROJECT_DIR$/src/sample/AktuellesDatum.java" />
         <option value="$PROJECT_DIR$/src/sample/ConnectionHighscore.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/Game.java" />
+        <option value="$PROJECT_DIR$/src/sample/Player.java" />
         <option value="$PROJECT_DIR$/Test/sample/GameTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/Game.java" />
       </list>
     </option>
   </component>
@@ -290,9 +314,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+    <option name="x" value="34" />
+    <option name="y" value="121" />
     <option name="width" value="1612" />
-    <option name="height" value="813" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -302,42 +327,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="YatziGUIFX3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YatziGUIFX3.0" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YatziGUIFX3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YatziGUIFX3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YatziGUIFX3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YatziGUIFX3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YatziGUIFX3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YatziGUIFX3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YatziGUIFX3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
@@ -399,7 +389,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.fullHouse">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -499,26 +489,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest.kleineStrasse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YatziGUIFX3.0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sample.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sample" />
-      <option name="MAIN_CLASS_NAME" value="sample.GameTest" />
-      <option name="METHOD_NAME" value="kleineStrasse" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GameTest.kleineStrasseFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YatziGUIFX3.0" />
       <extension name="coverage">
@@ -530,6 +500,26 @@
       <option name="PACKAGE_NAME" value="sample" />
       <option name="MAIN_CLASS_NAME" value="sample.GameTest" />
       <option name="METHOD_NAME" value="kleineStrasseFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.zweiPaare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YatziGUIFX3.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample" />
+      <option name="MAIN_CLASS_NAME" value="sample.GameTest" />
+      <option name="METHOD_NAME" value="zweiPaare" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -572,11 +562,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest.zweiPaare" />
         <item itemvalue="JUnit.GameTest.fullHouse" />
         <item itemvalue="JUnit.GameTest.fullHouseTrue" />
         <item itemvalue="JUnit.GameTest" />
         <item itemvalue="JUnit.GameTest.kleineStrasseFalse" />
-        <item itemvalue="JUnit.GameTest.kleineStrasse" />
       </list>
     </recent_temporary>
   </component>
@@ -596,44 +586,50 @@
       <workItem from="1561759135299" duration="4016000" />
       <workItem from="1561901274758" duration="8401000" />
       <workItem from="1561912802364" duration="9000" />
-      <workItem from="1562049208810" duration="2556000" />
+      <workItem from="1562049208810" duration="2762000" />
+      <workItem from="1562056519133" duration="12000" />
+      <workItem from="1562162802243" duration="133000" />
+      <workItem from="1562169740128" duration="118000" />
+      <workItem from="1562169864993" duration="49000" />
+      <workItem from="1563046883499" duration="6995000" />
+      <workItem from="1563124184081" duration="1522000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_zweier - 2019.07.02 at 09h 52m 12s.xml">
-      <configuration name="GameTest.zweier" configurationId="JUnit" />
+    <history-entry file="GameTest_zweiPaare - 2019.07.13 at 23h 24m 50s.xml">
+      <configuration name="GameTest.zweiPaare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_kleineStrasse - 2019.07.02 at 09h 52m 17s.xml">
-      <configuration name="GameTest.kleineStrasse" configurationId="JUnit" />
+    <history-entry file="GameTest_zweiPaare - 2019.07.13 at 23h 26m 10s.xml">
+      <configuration name="GameTest.zweiPaare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_kleineStrasse - 2019.07.02 at 09h 52m 47s.xml">
-      <configuration name="GameTest.kleineStrasse" configurationId="JUnit" />
+    <history-entry file="GameTest_zweiPaare - 2019.07.13 at 23h 26m 12s.xml">
+      <configuration name="GameTest.zweiPaare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_kleineStrasseFalse - 2019.07.02 at 09h 55m 45s.xml">
-      <configuration name="GameTest.kleineStrasseFalse" configurationId="JUnit" />
+    <history-entry file="GameTest_zweiPaare - 2019.07.13 at 23h 26m 28s.xml">
+      <configuration name="GameTest.zweiPaare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_kleineStrasseFalse - 2019.07.02 at 09h 55m 55s.xml">
-      <configuration name="GameTest.kleineStrasseFalse" configurationId="JUnit" />
+    <history-entry file="GameTest_zweiPaare - 2019.07.14 at 21h 33m 09s.xml">
+      <configuration name="GameTest.zweiPaare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2019.07.02 at 09h 56m 01s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_zweiPaare - 2019.07.14 at 21h 33m 31s.xml">
+      <configuration name="GameTest.zweiPaare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_fullHouseTrue - 2019.07.02 at 09h 57m 28s.xml">
-      <configuration name="GameTest.fullHouseTrue" configurationId="JUnit" />
+    <history-entry file="GameTest_zweiPaare - 2019.07.14 at 21h 33m 41s.xml">
+      <configuration name="GameTest.zweiPaare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_fullHouse - 2019.07.02 at 09h 59m 10s.xml">
-      <configuration name="GameTest.fullHouse" configurationId="JUnit" />
+    <history-entry file="GameTest_zweiPaare - 2019.07.14 at 21h 33m 53s.xml">
+      <configuration name="GameTest.zweiPaare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_fullHouse - 2019.07.02 at 09h 59m 35s.xml">
-      <configuration name="GameTest.fullHouse" configurationId="JUnit" />
+    <history-entry file="GameTest_zweiPaare - 2019.07.14 at 21h 34m 05s.xml">
+      <configuration name="GameTest.zweiPaare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_fullHouse - 2019.07.02 at 10h 00m 21s.xml">
-      <configuration name="GameTest.fullHouse" configurationId="JUnit" />
+    <history-entry file="GameTest_zweiPaare - 2019.07.14 at 21h 35m 39s.xml">
+      <configuration name="GameTest.zweiPaare" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35166000" />
+    <option name="totallyTimeSpent" value="44201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -643,9 +639,9 @@
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.6703755" visible="true" weight="0.25763127" />
-      <window_info id="Structure" order="5" weight="0.25" />
-      <window_info id="Favorites" order="6" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.6703755" weight="0.2728938" />
+      <window_info id="Structure" order="5" weight="0.24969475" />
+      <window_info id="Favorites" order="6" weight="0.32967034" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32884902" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
@@ -653,6 +649,44 @@
       <window_info anchor="bottom" id="Find" order="4" weight="0.32884902" />
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.27593583" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39786097" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Application Servers" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Problems" order="13" />
+      <window_info anchor="bottom" id="Changes" order="14" />
+      <window_info anchor="bottom" id="Profiler" order="15" />
+      <window_info anchor="bottom" id="Event Log" order="16" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.32834226" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3299363" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="5" weight="0.15414013" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.24969475" />
+      <window_info anchor="right" id="JetGradle" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.20940171" />
+      <window_info anchor="right" id="Palette" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.6703755" visible="true" weight="0.2728938" />
+      <window_info id="Structure" order="5" weight="0.24969475" />
+      <window_info id="Favorites" order="6" weight="0.32967034" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32884902" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32884902" />
+      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.27593583" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39805827" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -675,7 +709,7 @@
       <window_info anchor="right" id="Database" order="8" visible="true" weight="0.20940171" />
       <window_info anchor="right" id="Palette" order="9" />
       <window_info anchor="right" id="Maven Projects" order="10" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -703,13 +737,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/sample/Main.java</url>
-          <line>232</line>
+          <line>233</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/sample/Main.java</url>
-          <line>376</line>
+          <line>377</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -842,6 +876,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Die.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6270">
+          <caret line="434" column="91" selection-start-line="434" selection-start-column="86" selection-end-line="434" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/AktuellesDatum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -875,6 +926,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/dbConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -885,10 +943,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/Test/sample/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3585">
-          <caret line="239" column="50" selection-start-line="239" selection-start-column="50" selection-end-line="239" selection-end-column="50" />
+        <state relative-caret-position="487">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -897,33 +955,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="91" column="21" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="21" />
+        <state relative-caret-position="167">
+          <caret line="284" lean-forward="true" selection-start-line="284" selection-end-line="284" />
           <folding>
-            <element signature="e#21849#21850#0" expanded="true" />
-            <element signature="e#21889#21890#0" expanded="true" />
+            <element signature="e#21881#21882#0" expanded="true" />
+            <element signature="e#21946#21947#0" expanded="true" />
+            <element signature="e#22011#22012#0" expanded="true" />
+            <element signature="e#22076#22077#0" expanded="true" />
+            <element signature="e#22141#22142#0" expanded="true" />
+            <element signature="e#22206#22207#0" expanded="true" />
+            <element signature="e#22293#22294#0" expanded="true" />
+            <element signature="e#22360#22361#0" expanded="true" />
+            <element signature="e#22426#22427#0" expanded="true" />
+            <element signature="e#22490#22491#0" expanded="true" />
+            <element signature="e#22554#22555#0" expanded="true" />
+            <element signature="e#22622#22623#0" expanded="true" />
+            <element signature="e#22698#22699#0" expanded="true" />
+            <element signature="e#22767#22768#0" expanded="true" />
+            <element signature="e#22838#22839#0" expanded="true" />
+            <element signature="e#22939#22940#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Die.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/sample/GameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
         </state>
       </provider>
     </entry>
